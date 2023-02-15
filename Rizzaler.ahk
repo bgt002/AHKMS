@@ -44,7 +44,7 @@ fountainShower(){
 }
 
 summonSlave(){
-    Send, {w}
+Send, {w}
     Sleep, (900)
 }
 
@@ -53,9 +53,13 @@ summonSlave(){
 }
 
 lookLeft(){
-
+	Send, {Left down}
+	Sleep (75)
+	Send, {Left up}
 }
 
 lookRight(){
-    
+    Send, {Right down}
+	Sleep (75)
+	Send, {Right up}
 }
