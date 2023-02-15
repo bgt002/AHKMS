@@ -4,8 +4,7 @@
 
 ^j::
 
-
-{
+Loop{
     jumpA(2)
     liftOff(1)
     summonSlave(1)
@@ -13,14 +12,19 @@
     jumpA(2)
     fountainShower(1)
     jumpA(2)
+    lookLeft()
+    jumpA(6)
+    loopLock()
 }
+
+^Escape:: ExitApp
+^p:: pause
 
 loopLock(){
     fruitLoops(6)
 }
 
 fruitLoops(){
-    ;Loop Attack
     lookRight(1)
     jumpA(6)
     lookLeft(1)
@@ -40,16 +44,21 @@ liftOff(){
 
 fountainShower(){
     Send, {down} {e}
-    Sleep, (900)
+    Sleep, (625)
 }
 
 summonSlave(){
 Send, {w}
-    Sleep, (900)
+    Sleep, (600)
 }
 
-{
-    ;FlashJumpALeft
+jumpA(){
+	Send, {z}
+	Sleep, (30)
+	Send, {x}
+	Sleep, 80
+	Send, {f}
+	Sleep, (450)
 }
 
 lookLeft(){
@@ -62,4 +71,9 @@ lookRight(){
     Send, {Right down}
 	Sleep (75)
 	Send, {Right up}
+}
+
+ran(min, max){
+    random, ran, min, max
+    return ran
 }
