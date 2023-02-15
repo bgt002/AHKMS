@@ -6,50 +6,56 @@
 
 
 {
-    ;START NIGHT WALKER FAR LEFT
-    flashJumpARight(2)
-    ropeLift(1)
-    summonServant(1)
+    jumpA(2)
+    liftOff(1)
+    summonSlave(1)
     shadDodge(1)
-    flashJumpARight(2)
-    summonErda(1)
-    flashJumpARight(2)
+    jumpA(2)
+    fountainShower(1)
+    jumpA(2)
 }
 
-{
-
+loopLock(){
+    fruitLoops(6)
 }
-    ;Loop Attack 6x
 
-{
+fruitLoops(){
     ;Loop Attack
-    flashJumpALeft(6)
-    flashJumpARight(6)
+    lookRight(1)
+    jumpA(6)
+    lookLeft(1)
+    jumpA(6)
 }
 
 
-{
-    ;ShadowDodge
+shadDodge(){
+    Send, {a}
+    Sleep, (1000)
 }
 
-RopeLift()
-{
-    Send, {m}
+liftOff(){
+    Send, {c}
 	Sleep, (1000)
 }
 
-{
-    ;SummonErda
+fountainShower(){
+    Send, {down} {e}
+    Sleep, (900)
 }
 
-{
-    ;summonServant
+summonSlave(){
+    Send, {w}
+    Sleep, (900)
 }
 
 {
     ;FlashJumpALeft
 }
 
-{
-    ;FlashJumpARight;
+lookLeft(){
+
+}
+
+lookRight(){
+    
 }
