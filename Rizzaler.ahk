@@ -7,6 +7,7 @@
 ^j::{
 
     Loop{
+        sleep 2000
         jumpALoop2()
         liftOff()
         summonSlave()
@@ -14,7 +15,9 @@
         jumpALoop2()
         fountainShower()
         jumpALoop2()
+        Sleep Random(10,40)
         lookLeft()
+        Sleep Random(20,40)
         jumpALoop6()
         loopLock()
     }
@@ -26,8 +29,10 @@
     fruitLoops(){
         Loop 6
         lookRight()
+        Sleep Random(10, 20)
         jumpALoop6()
         lookLeft()
+        Sleep Random(10, 20)
         jumpALoop6()
     }
 
@@ -49,42 +54,38 @@
 
     liftOff(){
         Send "{c}"
-        Sleep 1000
+        Sleep 2500
     }
 
     fountainShower(){
-        Send "{down}" "{e}"
-        Sleep 625
+        Send "{down down}" "{e}"
+        Sleep 700
+        send "{down up}"
     }
 
     summonSlave(){
         Send "{w}"
-        Sleep 600
+        Sleep 700
     }
 
     jumpA(){
         Send "{z}"
-        Sleep 30
+        Sleep 50
         Send "{x}"
-        Sleep 80
+        Sleep 100
         Send "{f}"
-        Sleep 450
+        Sleep 1000
     }
 
     lookLeft(){
         Send "{Left down}"
-        Sleep 75
+        Sleep Random(50, 75)
         Send "{Left up}"
     }
 
     lookRight(){
         Send "{Right down}"
-        Sleep 75
+        Sleep Random(50, 75)
         Send "{Right up}"
-    }
-
-    ran(min, max){
-        random min, max
-        return ran
     }
 }
