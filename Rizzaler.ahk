@@ -70,11 +70,11 @@
 
     jumpA(){
         Send "{z}"
-        Sleep 50
+        Sleep 70
         Send "{x}"
         Sleep 100
         Send "{f}"
-        Sleep 1000
+        Sleep 950
     }
 
     lookLeft(){
