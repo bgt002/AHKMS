@@ -7,7 +7,9 @@
 ^j::{
 
     Loop{
-        sleep 2000
+        sleep Random(500,1000)
+        lookRight()
+        shadDodge()
         jumpALoop2()
         liftOff()
         summonSlave()
@@ -18,26 +20,26 @@
         Sleep Random(10,40)
         lookLeft()
         Sleep Random(20,40)
-        jumpALoop6()
+        jumpALoop5()
         loopLock()
     }
 
     loopLock(){
+        Loop 4
         fruitLoops()
     }
 
     fruitLoops(){
-        Loop 6
         lookRight()
         Sleep Random(10, 20)
-        jumpALoop6()
+        jumpALoop5()
         lookLeft()
         Sleep Random(10, 20)
-        jumpALoop6()
+        jumpALoop5()
     }
 
-    jumpALoop6(){
-        Loop 6
+    jumpALoop5(){
+        Loop 5
         jumpA()
     }
 
@@ -54,7 +56,7 @@
 
     liftOff(){
         Send "{c}"
-        Sleep 2500
+        Sleep 2250
     }
 
     fountainShower(){
@@ -70,11 +72,11 @@
 
     jumpA(){
         Send "{z}"
-        Sleep 70
+        Sleep 320
         Send "{x}"
-        Sleep 100
+        Sleep 85
         Send "{f}"
-        Sleep 950
+        Sleep 850
     }
 
     lookLeft(){
