@@ -7,37 +7,30 @@ SetKeyDelay(192, 255)
 ^j::{
 
     Loop{
-        lookLeft()
+        lookRight()
         feedFatFuck()
         shadDodge()
-        summonSlave()
-        goingThruFloorsLong()
+        summonSpears()
         loopLock()
-        liftOff()
-        pickUpSequentials()
-        Sleep Random(30, 40)
     }
 
     loopLock(){
-        Loop 3
+        Loop 10
         fruitLoops()
     }
 
     fruitLoops(){
-        jumpALoop5()
-        lookRight()
-        jumpATall()
-        bigBite()
         jumpALoop3()
-        jumpALong()
-        LookLeft()
-        jumpALoop5()
-        lookRight()
-        jumpATall()
-        badOmens()
-        jumpALoop3()
-        jumpALong()
+        Sleep 400
+        jumpALoop6()
+        goingThruFloorsLong()
         lookLeft()
+        jumpALoop3()
+        Sleep 400
+        jumpALoop6()
+        goingThruFloorsLong()
+        LookRight()
+        Sleep Random(20, 40)
     }
 
     pickUpSequentials(){
@@ -50,6 +43,11 @@ SetKeyDelay(192, 255)
         jumpALoop2()
         jumpALong()
         liftOff()
+    }
+
+    jumpALoop6(){
+        Loop 6
+        jumpA()
     }
 
     jumpALoop5(){
@@ -134,13 +132,6 @@ SetKeyDelay(192, 255)
         Sleep 15
     }
 
-    goingThruFloors(){
-        Send "{Down down}" "{space}"
-        Sleep Random(50, 55)
-        Send "{Down up}"
-        Sleep Random(750, 760)
-    }
-
     badOmens(){
         Send "{delete}"
         Sleep 800
@@ -151,19 +142,21 @@ SetKeyDelay(192, 255)
         Sleep 650
     }
 
-    callMeMaybe(){
-        Send "{n}"
-        Sleep 400
-    }
-
     feedFatFuck(){
         Send "{0}"
         Sleep 20
     }
 
+    goingThruFloors(){
+        Send "{Down down}" "{space}"
+        Sleep Random(50, 55)
+        Send "{Down up}"
+        Sleep Random(750, 760)
+    }
+
     goingThruFloorsLong(){
         Send "{Down down}" "{space}"
-        Sleep Random(400, 405)
+        Sleep Random(55, 60)
         Send "{Down up}"
         Sleep Random(750, 760)
     }
@@ -177,5 +170,10 @@ SetKeyDelay(192, 255)
         Loop 4
         attSequentials()
         Sleep 200
+    }
+
+    summonSpears(){
+        send "{z}"
+        Sleep 650
     }
 }
