@@ -158,7 +158,7 @@ SetKeyDelay(192, 255)
         Send "{Down down}" "{space}"
         Sleep Random(55, 60)
         Send "{Down up}"
-        Sleep Random(750, 760)
+        Sleep Random(800, 805)
     }
 
     attSequentials(){
