@@ -11,6 +11,7 @@ SetKeyDelay(192, 255)
         feedFatFuck()
         shadDodge()
         summonSpears()
+        gloryHole()
         loopLock()
     }
 
@@ -158,7 +159,7 @@ SetKeyDelay(192, 255)
         Send "{Down down}" "{space}"
         Sleep Random(55, 60)
         Send "{Down up}"
-        Sleep Random(800, 805)
+        Sleep Random(825, 830)
     }
 
     attSequentials(){
@@ -173,6 +174,11 @@ SetKeyDelay(192, 255)
     }
 
     summonSpears(){
+        send "{x}"
+        Sleep 650
+    }
+
+    gloryHole(){
         send "{z}"
         Sleep 650
     }
