@@ -99,7 +99,7 @@ SetKeyDelay(192, 255)
         Send "{Space up}"
         Sleep Random(90, 95)
         Send "{d}"
-        Sleep Random(700, 705)
+        Sleep Random(750, 755)
     }
 
     jumpALong(){

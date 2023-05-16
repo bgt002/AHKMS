@@ -13,10 +13,12 @@ SetKeyDelay(192, 255)
         loopLock1()
         moonbreon()
         loopLock2()
+        popAPot()
         damnYouRift()
         loopRiftLock()
         fruitLoops()
         loopLock1()
+        popAPot()
     }
 
     loopLock1(){
@@ -186,5 +188,10 @@ SetKeyDelay(192, 255)
         Sleep Random(50, 52)
         Send "{Right up}"
         Sleep 15
+    }
+
+    popAPot(){
+        Send "{ctrl}"
+        Sleep 20
     }
 }
