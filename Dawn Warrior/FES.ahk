@@ -7,27 +7,24 @@ SetKeyDelay(192, 255)
 ^j::{
 
     Loop{
-        ; sunnyDay()
-        ; looplock1()
-        ; moonbreon()
-        ; loopLock1()
-        ; popAPot()
-        ; damnYouRift()
-        ; loopLock2()
-        ; fruitLoops()
-        ; popAPot()
-        upJump()
-        Sleep 2000
-        ; goingThruFloors()
+        sunnyDay()
+        looplock1()
+        moonbreon()
+        loopLock1()
+        popAPot()
+        damnYouRift()
+        loopLock2()
+        fruitLoops()
+        popAPot()
     }
 
     loopLock1(){
-        Loop 10
+        Loop 12
         fruitLoops()
     }
 
     loopLock2(){
-        Loop 5
+        Loop 7
         fruitRift()
     }
 
