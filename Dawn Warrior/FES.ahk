@@ -215,11 +215,11 @@ SetKeyDelay(192, 255)
     }
 
     upJump(){
-        Send "{space}"
-        Sleep 150
-        Send "{Up down}"
+        Send "{space down}"
         Sleep 50
-        Send "{Space}"
+        Send "{Space up}"
+        Sleep 200
+        Send "{Up down}" "{Space}"
         Sleep 50
         Send "{Up up}"
         Sleep 50
