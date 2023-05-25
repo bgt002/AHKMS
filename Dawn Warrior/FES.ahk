@@ -10,6 +10,7 @@ SetKeyDelay(192, 255)
         sunnyDay()
         looplock1()
         moonbreon()
+        popAPot()
         loopLock1()
         popAPot()
         damnYouRift()
@@ -29,7 +30,7 @@ SetKeyDelay(192, 255)
     }
 
     loopRiftLock(){
-        Loop 4
+        Loop 10
         riftAttackMode()()
     }
 
@@ -42,9 +43,6 @@ SetKeyDelay(192, 255)
 
     fruitRift(){
         attackMode3Long()
-        upJump()
-        attackMode3Long()
-        goingThruFloors()
     }
 
 

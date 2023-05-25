@@ -8,28 +8,29 @@ SetKeyDelay(192, 255)
 
     Loop{
         ; xBuff()
-        ; zBuff()
+        zBuff()
         ; cBuff()
         loopLock1()
     }
 
     loopLock1(){
-        Loop 6
+        Loop 10
         fruitLoops()
     }
 
 
     fruitLoops(){
+        cerebusLock()
         cerebusChomp()
+        chaosLock()
         loopConcuss()
-        upJump()
+        chaosLock()
         loopConcuss()
-        goingThruFloors()
     }
 
 
     loopConcuss(){
-        Loop 4
+        Loop 3
         concussions()
     }
 
@@ -134,15 +135,13 @@ SetKeyDelay(192, 255)
     }
 
     concussions(){
-        Send "{d up}"
-        sleep 50
-        Send "{d down}"
-        Sleep 1000
+        Send "{d}"
+        Sleep 750
     }
 
     cerebusChomp(){
         Send "{e}"
-        Sleep 350
+        Sleep 750
     }
 
     upJump(){
@@ -156,5 +155,15 @@ SetKeyDelay(192, 255)
         Sleep 50
         Send "{Up Up}"
         Sleep 50
+    }
+
+    chaosLock(){
+        Send "{w}"
+        Sleep 750
+    }
+
+    cerebusLock(){
+        Send "{w}"
+        Sleep 1250
     }
 }
