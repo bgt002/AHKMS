@@ -8,12 +8,13 @@ SetKeyDelay(192, 255)
 
     Loop{
         ;;Loop section goes in here
-        fruitLoops()
+        zBuff()
+        looptyLoop()
     }
 
     loopLock(){
-        Loop 7
-        dashAttack()
+        Loop 4
+        jumpAAltHigh()
     }
 
     fruitLoops(){
@@ -29,7 +30,12 @@ SetKeyDelay(192, 255)
         usePot()
     }
 
-    jumpA(){
+    looptyLoop(){
+        Loop 10
+        fruitLoops()
+    }
+
+    jumpA(){ ;;only for dragable fj
         Send "{space}"
         Sleep 90
         Send "{ctrl}"
@@ -37,6 +43,28 @@ SetKeyDelay(192, 255)
         Send "{f}"
         Sleep 700
     }
+
+    jumpAAltLow(){
+        Send "{Space down}"
+        Sleep 70
+        Send "{Space up}"
+        Sleep 50
+        Send "{Space down}" "{d}"
+        Sleep 70
+        Send "{Space up}"
+        Sleep 750
+    }
+
+    jumpAAltHigh(){
+        Send "{Space down}"
+        Sleep 70
+        Send "{Space up}"
+        Sleep 200
+        Send "{Space down}" "{d}"
+        Sleep 70
+        Send "{Space up}"
+        Sleep 700
+    }    
 
     ropeLift(){
         Send "{j}"
@@ -90,7 +118,7 @@ SetKeyDelay(192, 255)
 
     zBuff(){
         send "{z}"
-        Sleep 650
+        Sleep 750
     }
 
     dashAttack(){

@@ -7,44 +7,44 @@ SetKeyDelay(192, 255)
 ^j::{
 
     Loop{
-        sunnyDay()
+        fruitLoops()
+    }
+
+    loopLock1(){
+        Loop 7  
+        attackSequence()
+    }
+    
+    loopRiftLock(){
+        Loop 6
+        riftAttackSequence()
+    }
+
+    fruitLoops(){
+        SunnyDay()
         looplock1()
         moonbreon()
         popAPot()
         loopLock1()
         popAPot()
         damnYouRift()
-        loopLock2()
-        fruitLoops()
+        loopRiftLock()
         popAPot()
     }
 
-    loopLock1(){
-        Loop 12
-        fruitLoops()
+    attackSequence(){
+        jumpALoop4()
+        lookLeft()
+        jumpALoop4()
+        lookRight()
     }
 
-    loopLock2(){
-        Loop 7
-        fruitRift()
+    riftAttackSequence(){
+        jumpARiftloop4()
+        lookLeft()
+        jumpARiftLoop4()
+        lookRight()
     }
-
-    loopRiftLock(){
-        Loop 10
-        riftAttackMode()()
-    }
-
-    fruitLoops(){
-        attackMode3()
-        upJump()
-        attackMode3()
-        goingThruFloors()
-    }
-
-    fruitRift(){
-        attackMode3Long()
-    }
-
 
     jumpALoop6(){
         Loop 6
@@ -86,15 +86,6 @@ SetKeyDelay(192, 255)
         jumpARift()
     }
 
-    attackMode3(){
-        Loop 3
-        attackMode()
-    }
-
-    attackMode3Long(){
-        Loop 3
-        riftAttackMode()
-    }
 
     jumpA(){
         Send "{Space down}"
@@ -106,7 +97,7 @@ SetKeyDelay(192, 255)
         Send "{Space up}"
         Sleep Random(50, 55)
         Send "{d}"
-        Sleep Random(575, 580)
+        Sleep Random(600, 610)
     }
 
     jumpALong(){
@@ -133,7 +124,7 @@ SetKeyDelay(192, 255)
         Send "{Space up}"
         Sleep Random(50, 55)
         Send "{d}"
-        Sleep Random(800, 805)   
+        Sleep Random(820, 825)   
     }
 
     feedFatFuck(){
@@ -165,17 +156,17 @@ SetKeyDelay(192, 255)
         Sleep 800
     }
 
-    sunnyDay(){
+    sunnyDay(){ ;;(lasts 40s)
         send "{Home}"
         Sleep 650
     }
 
-    moonbreon(){
+    moonbreon(){ ;;(lasts 15s)
         send "{End}"
         Sleep 750
     }
 
-    damnYouRift(){
+    damnYouRift(){ ;;(lasts 40s)
         send "{w}"
         Sleep 650
     }
@@ -199,16 +190,6 @@ SetKeyDelay(192, 255)
         Sleep 20
     }
 
-    attackMode(){
-        Send "{d}"
-        Sleep 550
-    }
-
-    riftAttackMode(){
-        Send "{d}"
-        Sleep 900
-    }
-
     upJump(){
         Send "{space down}"
         Sleep 50
@@ -217,6 +198,6 @@ SetKeyDelay(192, 255)
         Send "{Up down}" "{Space}"
         Sleep 50
         Send "{Up up}"
-        Sleep 50
+        Sleep 1000
     }
 }
