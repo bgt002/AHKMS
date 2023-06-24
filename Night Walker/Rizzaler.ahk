@@ -55,12 +55,12 @@
     }
 
     liftOff(){
-        Send "{c}"
+        Send "{5}"
         Sleep 2250
     }
 
     fountainShower(){
-        Send "{down down}" "{e}"
+        Send "{down down}" "{v}"
         Sleep 700
         send "{down up}"
     }
@@ -71,12 +71,21 @@
     }
 
     jumpA(){
-        Send "{z}"
+        Send "{ctrl}"
         Sleep 320
-        Send "{x}"
-        Sleep 85
-        Send "{f}"
-        Sleep 850
+        Send "{space}"
+        Sleep 70
+        Send "{d}"
+        Sleep 700
+    }
+
+    jumpATall(){
+        Send "{ctrl}"
+        Sleep 300
+        Send "{space}"
+        Sleep 70
+        Send "{d}"
+        Sleep 800
     }
 
     lookLeft(){

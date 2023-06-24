@@ -76,7 +76,7 @@ SetKeyDelay(192, 255)
         Sleep 90
         Send "{ctrl}"
         Sleep 70
-        Send "{f}"
+        Send "{d}"
         Sleep 1200
     }
 
@@ -85,7 +85,7 @@ SetKeyDelay(192, 255)
         Sleep 90
         Send "{ctrl}"
         Sleep 70
-        Send "{f}"
+        Send "{d}"
         Sleep 700
     }
 
@@ -94,7 +94,7 @@ SetKeyDelay(192, 255)
         Sleep 300
         Send "{ctrl}"
         Sleep 70
-        Send "{f}"
+        Send "{d}"
         Sleep 800
     }
 
