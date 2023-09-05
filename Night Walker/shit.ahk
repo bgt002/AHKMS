@@ -11,35 +11,27 @@ SetKeyDelay(192, 255)
 
     Loop{
         ;;Loop section goes in here
-        Sleep 500
-        zBuff()
-        xBuff()
-        loopLock()
-        goingThruFloors()
-        tidalCrash()
-        jump()
-        tidalCrash()
-        jump()
-        jump()
+        jumpA()
     }
 
     loopLock(){
-        Loop 20
+        Loop 10
         fruitLoops()
     }
 
     fruitLoops(){
         ;;Insert Attack Sequence that needs to be looped to be inserted into loopLock
-        lookRight()
-        tidalLoop()
-        lookLeft()
-        tidalLoop()
     }
 
-    tidalLoop(){
-        Loop 5
-        tidalCrash()
+    jumpA(){
+        Send "{space}"
+        Sleep 90
+        Send "{ctrl}"
+        Sleep 70
+        Send "{f}"
+        Sleep 700
     }
+
     ropeLift(){
         Send "{j}"
         Sleep 1700
@@ -93,23 +85,5 @@ SetKeyDelay(192, 255)
     zBuff(){
         send "{z}"
         Sleep 650
-    }
-
-    tidalCrash(){
-        Send "{d}"
-        Sleep 150
-        Send "{f}"
-        Sleep 375
-    }
-
-    jump(){
-        Send "{Space down}"
-        Sleep Random(50, 85)
-        Send "{Space up}"
-        Sleep Random(50, 85)
-        Send "{Space down}"
-        Sleep Random(50, 85)
-        Send "{Space up}"
-        Sleep Random(90, 95)
     }
 }

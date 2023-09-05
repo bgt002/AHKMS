@@ -85,4 +85,15 @@ SetKeyDelay(192, 255)
         send "{z}"
         Sleep 650
     }
+
+    jump(){
+        Send "{Space down}"
+        Sleep Random(50, 85)
+        Send "{Space up}"
+        Sleep Random(50, 85)
+        Send "{Space down}"
+        Sleep Random(50, 85)
+        Send "{Space up}"
+        Sleep Random(90, 95)
+    }
 }
