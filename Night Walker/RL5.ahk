@@ -42,14 +42,14 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 70
         Send "{f}"
-        Sleep 650
+        Sleep 700
     } 
 
     jumpALong(){
         Send "{space}"
-        Sleep 90
+        Sleep 100
         Send "{ctrl}"
-        Sleep 70
+        Sleep 75
         Send "{f}"
         Sleep 1500
     }

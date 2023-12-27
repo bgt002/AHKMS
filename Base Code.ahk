@@ -23,9 +23,9 @@ SetKeyDelay(192, 255)
     }
 
     jumpA(){
-        Send "{space}"
-        Sleep 90
         Send "{ctrl}"
+        Sleep 90
+        Send "{space}"
         Sleep 70
         Send "{f}"
         Sleep 700
