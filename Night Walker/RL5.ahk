@@ -13,6 +13,7 @@ SetKeyDelay(192, 255)
         upJumpFJAtt()
         erdaShower()
         doubleJumpAtt()
+        sleep 200
         summonLucid()
         doubleJumpAtt()
         shadDodge()
@@ -148,7 +149,7 @@ SetKeyDelay(192, 255)
     }
 
     summonLucid(){
-        Send "{r}"
+        Send "{n}"
         Sleep 1100
     }
 
