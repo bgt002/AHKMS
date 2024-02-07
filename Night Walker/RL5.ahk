@@ -78,16 +78,16 @@ SetKeyDelay(192, 255)
 
     lookLeft(){
         Send "{Left down}"
-        Sleep Random(60, 65)
+        Sleep Random(63, 67)
         Send "{Left up}"
-        Sleep 15
+        Sleep 20
     }
 
     lookRight(){
         Send "{Right down}"
-        Sleep Random(50, 52)
+        Sleep Random(63, 67)
         Send "{Right up}"
-        Sleep 15
+        Sleep 20
     }
 
     feedPet(){
