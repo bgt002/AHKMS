@@ -13,7 +13,7 @@ SetKeyDelay(192, 255)
         upJumpFJAtt()
         erdaShower()
         doubleJumpAtt()
-        sleep 200
+        sleep 500
         summonLucid()
         doubleJumpAtt()
         shadDodge()
