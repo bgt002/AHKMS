@@ -13,15 +13,17 @@ SetKeyDelay(192, 255)
         upJumpFJAtt()
         erdaShower()
         doubleJumpAtt()
-        Sleep 650
+        Sleep Random(650, 670)
         summonLucid()
         doubleJumpAtt()
         shadDodge()
         summonSlave()
         doubleJumpAtt()
         jumpALong()
+        Sleep Random(150, 170)
         lookLeft()
         jumpAloop6()
+        Sleep Random(150, 170)
         lookRight()
         loopLock()
     }
@@ -44,7 +46,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 70
         Send "{f}"
-        Sleep 700
+        Sleep 650
     } 
 
     jumpALong(){
