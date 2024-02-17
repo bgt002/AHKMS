@@ -16,6 +16,7 @@ SetKeyDelay(192, 255)
         Sleep Random(650, 670)
         summonLucid()
         doubleJumpAtt()
+        Sleep 100
         summonSlave()
         doubleJumpAtt()
         jumpALong()
