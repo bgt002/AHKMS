@@ -16,14 +16,13 @@ SetKeyDelay(192, 255)
         Sleep Random(650, 670)
         summonLucid()
         doubleJumpAtt()
-        shadDodge()
         summonSlave()
         doubleJumpAtt()
         jumpALong()
-        Sleep Random(150, 170)
+        Sleep Random(160, 180)
         lookLeft()
         jumpAloop6()
-        Sleep Random(150, 170)
+        Sleep Random(160, 180)
         lookRight()
         loopLock()
     }
@@ -35,8 +34,10 @@ SetKeyDelay(192, 255)
 
     fruitLoops(){
         jumpALoop5()
+        Sleep Random(100, 110)
         lookLeft()
         jumpALoop5()
+        Sleep Random(100, 110,)
         lookRight()
     }
 
@@ -137,7 +138,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 50
         Send "{f}"
-        Sleep 700
+        Sleep 725
     }
 
     summonSlave(){
