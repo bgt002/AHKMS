@@ -53,7 +53,7 @@ SetKeyDelay(192, 255)
         lookLeft()
         jumpABite()
         jumpAOmen()
-        jumpALoop()
+        jumpALoop3()
         lookRight()
     }
 
