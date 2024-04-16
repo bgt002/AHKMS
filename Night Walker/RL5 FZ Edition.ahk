@@ -27,10 +27,11 @@ SetKeyDelay(192, 255)
         Sleep Random(170, 180)
         lookRight()
         loopLock()
+        jumpA()
     }
 
     loopLock(){
-        Loop 4
+        Loop 3
         fruitLoops()
     }
 
@@ -47,12 +48,12 @@ SetKeyDelay(192, 255)
         lookRight()
         jumpA()
         jumpAOmen()
-        jumpALoop4()
+        jumpALoop3()
         Sleep Random(100, 110)
         lookLeft()
         jumpABite()
         jumpAOmen()
-        jumpALoop3()
+        jumpALoop()
         lookRight()
     }
 
