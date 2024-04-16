@@ -28,6 +28,9 @@ SetKeyDelay(192, 255)
         Sleep Random(170, 180)
         lookRight()
         loopLock()
+        jumpA()
+        Sleep Random(100, 110)
+        lookRight()
     }
 
     loopLock(){
@@ -51,9 +54,7 @@ SetKeyDelay(192, 255)
         lookLeft()
         jumpABite()
         jumpAOmen()
-        jumpALoop4()
-        Sleep Random(100, 110)
-        lookRight()
+        jumpALoop3()
     }
 
     jumpA(){
