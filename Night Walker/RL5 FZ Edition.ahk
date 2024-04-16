@@ -52,6 +52,7 @@ SetKeyDelay(192, 255)
         jumpABite()
         jumpAOmen()
         jumpALoop3()
+        Sleep Random(100, 110)
         lookRight()
     }
 
