@@ -15,7 +15,8 @@ SetKeyDelay(192, 255)
         doubleJumpAtt()
         Sleep 50
         doubleJumpAtt()
-        Sleep 130
+        Sleep 150
+        shadDodge()
         summonSlave()
         doubleJumpAtt()
         jumpALong()
@@ -27,7 +28,6 @@ SetKeyDelay(192, 255)
         Sleep Random(170, 180)
         lookRight()
         loopLock()
-        jumpA()
     }
 
     loopLock(){
@@ -51,7 +51,7 @@ SetKeyDelay(192, 255)
         lookLeft()
         jumpABite()
         jumpAOmen()
-        jumpALoop3()
+        jumpALoop4()
         Sleep Random(100, 110)
         lookRight()
     }
