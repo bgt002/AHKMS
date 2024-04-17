@@ -15,7 +15,7 @@ SetKeyDelay(192, 255)
         doubleJumpAtt()
         Sleep 50
         doubleJumpAtt()
-        Sleep 275
+        Sleep 200
         shadDodge()
         summonSlave()
         doubleJumpAtt()
@@ -25,7 +25,7 @@ SetKeyDelay(192, 255)
         jumpABite()
         JumpAOmen()
         jumpALoop3()
-        Sleep Random(170, 180)
+        Sleep Random(150, 160)
         lookRight()
         loopLock()
     }
@@ -38,21 +38,21 @@ SetKeyDelay(192, 255)
     fruitLoops(){
         jumpAOmen()
         jumpALoop4()
-        Sleep Random(100, 110)
+        Sleep Random(110, 120)
         lookLeft()
         jumpA()
         jumpAOmen()
         jumpALoop3()
-        Sleep Random(100, 110)
+        Sleep Random(110, 120)
         lookRight()
         jumpAOmen()
         jumpALoop4()
-        Sleep Random(100, 110)
+        Sleep Random(110, 120)
         lookLeft()
         jumpABite()
         jumpAOmen()
         jumpALoop3()
-        Sleep Random(100, 110)
+        Sleep Random(110, 120)
         lookRight()
     }
 
@@ -196,7 +196,7 @@ SetKeyDelay(192, 255)
 
     shadDodge(){
         Send "{a}"
-        Sleep 1000
+        Sleep 900
     }
 
 }
