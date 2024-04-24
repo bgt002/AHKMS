@@ -19,7 +19,7 @@ SetKeyDelay(192, 255)
         Sleep 200
         summonSlave()
         doubleJumpAtt()
-        jumpALong()
+        Sleep 400
         lookLeft()
         jumpABite()
         JumpAOmen()
@@ -96,7 +96,7 @@ SetKeyDelay(192, 255)
 
     jumpATall(){
         Send "{space}"
-        Sleep 320
+        Sleep 275
         Send "{ctrl}"
         Sleep 70
         Send "{f}"
