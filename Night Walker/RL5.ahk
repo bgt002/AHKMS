@@ -84,14 +84,14 @@ SetKeyDelay(192, 255)
 
     lookLeft(){
         Send "{Left down}"
-        Sleep Random(63, 67)
+        Sleep Random(80, 84)
         Send "{Left up}"
         Sleep 20
     }
 
     lookRight(){
         Send "{Right down}"
-        Sleep Random(63, 67)
+        Sleep Random(80, 84)
         Send "{Right up}"
         Sleep 20
     }
