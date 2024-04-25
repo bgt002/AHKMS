@@ -19,7 +19,7 @@ SetKeyDelay(192, 255)
         Sleep 200
         summonSlave()
         doubleJumpAtt()
-        Sleep 400
+        Sleep 500
         lookLeft()
         jumpABite()
         JumpAOmen()
@@ -38,23 +38,23 @@ SetKeyDelay(192, 255)
         jumpAOmen()
         jumpA()
         jumpATallLoop3()
-        Sleep Random(90, 100)
+        Sleep Random(100, 110)
         lookLeft()
         jumpATall()
         jumpAOmen()
         jumpATall()
         jumpALoop2()
-        Sleep Random(90, 100)
+        Sleep Random(100, 110)
         lookRight()
         jumpAOmen()
         jumpA()
         jumpATallLoop3()
-        Sleep Random(90, 100)
+        Sleep Random(100, 110)
         lookLeft()
         jumpABite()
         jumpAOmen()
         jumpALoop3()
-        Sleep Random(90, 100)
+        Sleep Random(100, 110)
         lookRight()
     }
 
@@ -96,7 +96,7 @@ SetKeyDelay(192, 255)
 
     jumpATall(){
         Send "{space}"
-        Sleep 275
+        Sleep 250
         Send "{ctrl}"
         Sleep 70
         Send "{f}"
@@ -147,14 +147,14 @@ SetKeyDelay(192, 255)
 
     lookLeft(){
         Send "{Left down}"
-        Sleep Random(80, 84)
+        Sleep Random(90, 94)
         Send "{Left up}"
         Sleep 20
     }
 
     lookRight(){
         Send "{Right down}"
-        Sleep Random(80, 84)
+        Sleep Random(90, 94)
         Send "{Right up}"
         Sleep 20
     }
