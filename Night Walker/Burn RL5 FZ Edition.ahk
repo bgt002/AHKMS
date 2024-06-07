@@ -96,7 +96,7 @@ SetKeyDelay(192, 255)
 
     jumpATall(){
         Send "{space}"
-        Sleep 250
+        Sleep 200
         Send "{ctrl}"
         Sleep 70
         Send "{f}"
