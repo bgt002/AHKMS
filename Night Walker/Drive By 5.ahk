@@ -12,9 +12,8 @@ SetKeyDelay(192, 255)
         badOmens()
         doubleJumpAtt()
         lookLeft()
-        Sleep 1000
         erdaShower()
-        Sleep 300
+        upJumpFJAtt()
         upJumpFJAtt()
         lookRight()
         shadDodge()
@@ -145,17 +144,6 @@ SetKeyDelay(192, 255)
     feedPet(){
         Send "{0}"
         Sleep 20
-    }
-
-    jump(){
-        Send "{space down}"
-        Sleep Random(50, 85)
-        Send "{space up}"
-        Sleep Random(50, 85)
-        Send "{space down}"
-        Sleep Random(50, 85)
-        Send "{space up}"
-        Sleep Random(90, 95)
     }
 
     upJumpFJAtt(){
