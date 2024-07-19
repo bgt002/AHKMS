@@ -13,6 +13,7 @@ SetKeyDelay(192, 255)
         doubleJumpAtt()
         moveLeft()
         erdaShower()
+
         upJumpFJAtt()
         lookRight()
         shadDodge()
@@ -122,7 +123,7 @@ SetKeyDelay(192, 255)
 
     erdaShower(){
         Send "{7}"
-        Sleep 650
+        Sleep 1000
     }
 
 
@@ -137,7 +138,7 @@ SetKeyDelay(192, 255)
         Send "{Left down}"
         Sleep Random(90, 94)
         Send "{Left up}"
-        Sleep 500
+        Sleep 600
     }
 
     lookRight(){
@@ -200,6 +201,10 @@ SetKeyDelay(192, 255)
     summonAnus(){
         Send "{8}"
         Sleep 200
+    }
+
+    shadBite(){
+        Send "{e}"
     }
 
 }
