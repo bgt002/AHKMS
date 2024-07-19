@@ -11,8 +11,7 @@ SetKeyDelay(192, 255)
         summonAnus()
         badOmens()
         doubleJumpAtt()
-        lookLeft()
-        Sleep 1000
+        moveLeft()
         erdaShower()
         upJumpFJAtt()
         lookRight()
@@ -132,6 +131,13 @@ SetKeyDelay(192, 255)
         Sleep Random(90, 94)
         Send "{Left up}"
         Sleep 50
+    }
+
+    moveLeft(){
+        Send "{Left down}"
+        Sleep Random(90, 94)
+        Send "{Left up}"
+        Sleep 500
     }
 
     lookRight(){
