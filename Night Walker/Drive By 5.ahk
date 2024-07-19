@@ -14,6 +14,7 @@ SetKeyDelay(192, 255)
         lookLeft()
         Sleep 1000
         erdaShower()
+        Sleep 200
         upJumpFJAtt()
         lookRight()
         shadDodge()
