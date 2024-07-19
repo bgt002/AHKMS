@@ -123,7 +123,7 @@ SetKeyDelay(192, 255)
 
     erdaShower(){
         Send "{7}"
-        Sleep 150
+        Sleep 250
     }
 
 
