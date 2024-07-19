@@ -12,7 +12,7 @@ SetKeyDelay(192, 255)
         badOmens()
         doubleJumpAtt()
         lookLeft()
-        Sleep 500
+        Sleep 1000
         erdaShower()
         upJumpFJAtt()
         lookRight()
