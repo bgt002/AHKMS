@@ -19,7 +19,7 @@ SetKeyDelay(192, 255)
         summonSlave()
         lookLeft()
         doubleJumpAtt()
-        Sleep 675
+        Sleep 725
         lookRight()
         jumpABite()
         JumpAOmen()
@@ -70,7 +70,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 70
         Send "{e}"
-        Sleep 650
+        Sleep 700
     }
 
     jumpAOmen(){
@@ -79,7 +79,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 70
         Send "{del}"
-        Sleep 650
+        Sleep 700
     }  
 
     jumpALong(){
@@ -158,7 +158,7 @@ SetKeyDelay(192, 255)
         Send "{space up}"
         Sleep 50
         Send "{Up down}" 
-        Sleep 100
+        Sleep 150
         Send "{space}"
         Sleep 150
         Send "{up up}"
