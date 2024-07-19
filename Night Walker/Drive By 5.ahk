@@ -14,7 +14,7 @@ SetKeyDelay(192, 255)
         lookLeft()
         Sleep 1000
         erdaShower()
-        Sleep 400
+        Sleep 300
         upJumpFJAtt()
         lookRight()
         shadDodge()
@@ -132,14 +132,14 @@ SetKeyDelay(192, 255)
         Send "{Left down}"
         Sleep Random(90, 94)
         Send "{Left up}"
-        Sleep 20
+        Sleep 50
     }
 
     lookRight(){
         Send "{Right down}"
         Sleep Random(90, 94)
         Send "{Right up}"
-        Sleep 20
+        Sleep 50
     }
 
     feedPet(){
