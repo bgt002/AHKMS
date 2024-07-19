@@ -8,21 +8,22 @@ SetKeyDelay(192, 255)
     Loop{
         shadDodge()
         upJumpFJAtt()
-        erdaShower()
+        summonAnus()
         badOmens()
         doubleJumpAtt()
-        Sleep 50
-        doubleJumpAtt()
-        Sleep 200
+        upJumpFJAtt()
+        lookRight()
+        shadDodge()
         summonSlave()
+        lookLeft()
         doubleJumpAtt()
         Sleep 675
-        lookLeft()
+        lookRight()
         jumpABite()
         JumpAOmen()
-        jumpALoop3()
+        jumpALoop4()
         Sleep Random(100, 110)
-        lookRight()
+        lookLeft()
         loopLock()
     }
 
@@ -35,21 +36,21 @@ SetKeyDelay(192, 255)
         jumpAOmen()
         jumpALoop4()
         Sleep Random(110, 120)
-        lookLeft()
+        lookRight()
         jumpA()
         jumpAOmen()
         jumpALoop3()
         Sleep Random(110, 120)
-        lookRight()
+        lookLeft()
         jumpAOmen()
         jumpALoop4()
         Sleep Random(110, 120)
-        lookLeft()
+        lookRight()
         jumpABite()
         jumpAOmen()
         jumpALoop3()
         Sleep Random(110, 120)
-        lookRight()
+        lookLeft()
     }
 
     jumpA(){
@@ -118,9 +119,7 @@ SetKeyDelay(192, 255)
     }
 
     erdaShower(){
-        Send "{down down}" "{7}"
-        Sleep 700
-        send "{down up}"
+        Send "{7}"
         Sleep 150
     }
 
@@ -198,6 +197,11 @@ SetKeyDelay(192, 255)
     badOmens(){
         Send "{del}"
         Sleep 750
+    }
+
+    summonAnus(){
+        Send "{8}"
+        Sleep 200
     }
 
 }
