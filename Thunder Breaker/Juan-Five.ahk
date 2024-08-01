@@ -21,11 +21,11 @@ SetKeyDelay(192, 255)
         Loop 9
         tidalThunderLoop5()
         tidalThunderTurn()
-        Sleep Random(100, 110)
+        Sleep Random(200, 210)
         lookRight()
         tidalThunderLoop5()
         tidalThunderTurn()
-        Sleep Random(100, 110)
+        Sleep Random(200, 210)
         lookLeft()
     }
 
@@ -83,7 +83,7 @@ SetKeyDelay(192, 255)
         Send "{d}"
         Sleep 125
         Send "{f}"
-        Sleep 30000
+        Sleep 750
     }
 
     goingThruFloors(){
