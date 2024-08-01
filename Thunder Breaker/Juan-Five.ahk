@@ -10,18 +10,7 @@ SetKeyDelay(192, 255)
         erdaShower()
         goingThruFloors()
         goingThruFloors()
-        ; loopLock()
-        tidalThunderLoop5()
-        Sleep 100
-        lookRight()
-        tidalThunderLoop5()
-        lookRight()
-        ; tidalThunder()
-        ; tidalThunder()
-        ; sleep 100
-        ; lookRight()
-        ; tidalThunder()
-        ; tidalThunder()
+        loopLock()
     }
 
     loopLock(){
@@ -34,7 +23,8 @@ SetKeyDelay(192, 255)
         Sleep 100
         lookRight()
         tidalThunderLoop5()
-        lookRight()
+        Sleep 100
+        lookLeft()
     }
 
     tidalThunderLoop5(){
@@ -82,9 +72,9 @@ SetKeyDelay(192, 255)
 
     tidalThunder(){
         Send "{d}"
-        Sleep 75
+        Sleep 100
         Send "{f}"
-        Sleep 350
+        Sleep 400
     }
 
     tidalThunderTurn(){
