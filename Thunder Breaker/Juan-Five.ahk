@@ -20,8 +20,10 @@ SetKeyDelay(192, 255)
     fruitLoops(){
        Loop 9
        loop6tidalThunder()
+       Sleep 250
        lookRight()
        loop6tidalThunder()
+       Sleep 250
        lookLeft()
     }
 
@@ -85,14 +87,14 @@ SetKeyDelay(192, 255)
         Send "{space}"
         Sleep 150
         Send "{up up}"
-        Sleep 400
+        Sleep 600
     }
 
     tidalThunder(){
         Send "{d}"
-        Sleep 150
+        Sleep 125
         Send "{f}"
-        Sleep 750
+        Sleep 500
     }
 
     goingThruFloors(){
