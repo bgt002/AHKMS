@@ -10,7 +10,12 @@ SetKeyDelay(192, 255)
         erdaShower()
         goingThruFloors()
         goingThruFloors()
-        loopLock()
+        tidalThunder()
+        tidalThunder()
+        sleep 100
+        lookRight()
+        tidalThunder()
+        tidalThunder()
     }
 
     loopLock(){
@@ -86,6 +91,19 @@ SetKeyDelay(192, 255)
         Sleep 125
         Send "{f}"
         Sleep 1000
+    }
+
+    jumpA(){
+        Send "{Space down}"
+        Sleep Random(50, 85)
+        Send "{Space up}"
+        Sleep Random(50, 85)
+        Send "{Space down}"
+        Sleep Random(50, 85)
+        Send "{Space up}"
+        Sleep Random(50, 55)
+        Send "{d}"
+        Sleep Random(600, 610)
     }
 
     goingThruFloors(){
