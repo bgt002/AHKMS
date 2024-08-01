@@ -20,10 +20,10 @@ SetKeyDelay(192, 255)
 
     fruitLoops(){
         tidalThunderLoop6()
-        Sleep 100
+        Sleep Random(80, 90)
         lookRight()
         tidalThunderLoop6()
-        Sleep 100
+        Sleep Random (80, 90)
         lookLeft()
     }
 
@@ -74,7 +74,7 @@ SetKeyDelay(192, 255)
         Send "{d}"
         Sleep Random(100, 110)
         Send "{f}"
-        Sleep 400
+        Sleep 450
     }
 
     jumpA(){
