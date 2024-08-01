@@ -53,7 +53,7 @@ SetKeyDelay(192, 255)
 
     lookLeft(){
         Send "{Left down}"
-        Sleep Random(200, 210)
+        Sleep Random(90, 94)
         Send "{Left up}"
         Sleep 50
     }
@@ -67,7 +67,7 @@ SetKeyDelay(192, 255)
 
     lookRight(){
         Send "{Right down}"
-        Sleep Random(200, 210)
+        Sleep Random(90, 94)
         Send "{Right up}"
         Sleep 50
     }
@@ -101,7 +101,7 @@ SetKeyDelay(192, 255)
         Send "{d}"
         Sleep 125
         Send "{f}"
-        Sleep 750
+        Sleep 1200
     }
 
     goingThruFloors(){
