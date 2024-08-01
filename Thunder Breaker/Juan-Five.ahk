@@ -6,6 +6,7 @@ SetKeyDelay(192, 255)
 
 ^j::{
     Loop{
+        Sleep 150
         upJump()
         erdaShower()
         goingThruFloors()
