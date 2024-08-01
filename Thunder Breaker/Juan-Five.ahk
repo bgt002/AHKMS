@@ -78,14 +78,14 @@ SetKeyDelay(192, 255)
         Send "{d}"
         Sleep 125
         Send "{f}"
-        Sleep 500
+        Sleep 750
     }
 
     tidalThunderTurn(){
         Send "{d}"
         Sleep 125
         Send "{f}"
-        Sleep 750
+        Sleep 1000
     }
 
     goingThruFloors(){
