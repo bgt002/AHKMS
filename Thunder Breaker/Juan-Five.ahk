@@ -74,7 +74,7 @@ SetKeyDelay(192, 255)
         Send "{d}"
         Sleep Random(100, 110)
         Send "{f}"
-        Sleep 450
+        Sleep 500
     }
 
     jumpA(){
