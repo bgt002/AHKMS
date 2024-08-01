@@ -101,7 +101,7 @@ SetKeyDelay(192, 255)
         Send "{d}"
         Sleep 125
         Send "{f}"
-        Sleep 1200
+        Sleep 1500
     }
 
     goingThruFloors(){
