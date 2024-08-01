@@ -18,33 +18,22 @@ SetKeyDelay(192, 255)
     }
 
     fruitLoops(){
-       Loop 9
-       loop5tidalThunder()
-       tidalThunderTurn()
-       lookRight()
-       loop5tidalThunder()
-       tidalThunderTurn()
-       lookLeft()
+        Loop 9
+        tidalThunderLoop5()
+        tidalThunderTurn()
+        Sleep Random(100, 110)
+        lookRight()
+        tidalThunderLoop5()
+        tidalThunderTurn()
+        Sleep Random(100, 110)
+        lookLeft()
     }
 
-    loop5tidalThunder(){
+    tidalThunderLoop5(){
         Loop 5
         tidalThunder()
     }
 
-    jumpA(){
-        Send "{space}"
-        Sleep 90
-        Send "{ctrl}"
-        Sleep 70
-        Send "{f}"
-        Sleep 650
-    }
-
-    ropeLift(){
-        Send "{j}"
-        Sleep 1700
-    }
 
     erdaShower(){
         Send "{7}"
@@ -56,13 +45,6 @@ SetKeyDelay(192, 255)
         Sleep Random(90, 94)
         Send "{Left up}"
         Sleep 50
-    }
-
-    moveLeft(){
-        Send "{Left down}"
-        Sleep Random(90, 94)
-        Send "{Left up}"
-        Sleep 400
     }
 
     lookRight(){
