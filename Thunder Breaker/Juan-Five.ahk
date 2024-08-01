@@ -10,12 +10,18 @@ SetKeyDelay(192, 255)
         erdaShower()
         goingThruFloors()
         goingThruFloors()
-        tidalThunder()
-        tidalThunder()
-        sleep 100
+        ; loopLock()
+        tidalThunderLoop5()
+        Sleep 100
         lookRight()
-        tidalThunder()
-        tidalThunder()
+        tidalThunderLoop5()
+        lookRight()
+        ; tidalThunder()
+        ; tidalThunder()
+        ; sleep 100
+        ; lookRight()
+        ; tidalThunder()
+        ; tidalThunder()
     }
 
     loopLock(){
@@ -25,15 +31,10 @@ SetKeyDelay(192, 255)
     fruitLoops(){
         Loop 9
         tidalThunderLoop5()
-        Sleep 500
-        tidalThunderTurn()
-        Sleep Random(1200, 1210)
+        Sleep 100
         lookRight()
         tidalThunderLoop5()
-        Sleep 500
-        tidalThunderTurn()
-        Sleep Random(1200, 1210)
-        lookLeft()
+        lookRight()
     }
 
     tidalThunderLoop5(){
@@ -81,9 +82,9 @@ SetKeyDelay(192, 255)
 
     tidalThunder(){
         Send "{d}"
-        Sleep 125
+        Sleep 75
         Send "{f}"
-        Sleep 750
+        Sleep 350
     }
 
     tidalThunderTurn(){
