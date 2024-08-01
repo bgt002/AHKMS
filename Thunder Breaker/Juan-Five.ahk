@@ -21,11 +21,11 @@ SetKeyDelay(192, 255)
         Loop 9
         tidalThunderLoop5()
         tidalThunderTurn()
-        Sleep Random(200, 210)
+        Sleep Random(1200, 1210)
         lookRight()
         tidalThunderLoop5()
         tidalThunderTurn()
-        Sleep Random(200, 210)
+        Sleep Random(1200, 1210)
         lookLeft()
     }
 
