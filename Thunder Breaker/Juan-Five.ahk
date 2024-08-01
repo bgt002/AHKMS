@@ -23,7 +23,7 @@ SetKeyDelay(192, 255)
         Sleep Random(80, 90)
         lookRight()
         tidalThunderLoop6()
-        Sleep Random (80, 90)
+        Sleep Random(80, 90)
         lookLeft()
     }
 
@@ -74,7 +74,7 @@ SetKeyDelay(192, 255)
         Send "{d}"
         Sleep Random(100, 110)
         Send "{f}"
-        Sleep Random(500, 510)
+        Sleep Random(520, 530)
     }
 
     jumpA(){
