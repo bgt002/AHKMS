@@ -20,10 +20,8 @@ SetKeyDelay(192, 255)
     fruitLoops(){
        Loop 9
        loop6tidalThunder()
-       Sleep 250
        lookRight()
        loop6tidalThunder()
-       Sleep 250
        lookLeft()
     }
 
@@ -53,7 +51,7 @@ SetKeyDelay(192, 255)
 
     lookLeft(){
         Send "{Left down}"
-        Sleep Random(90, 94)
+        Sleep Random(200, 210)
         Send "{Left up}"
         Sleep 50
     }
@@ -67,7 +65,7 @@ SetKeyDelay(192, 255)
 
     lookRight(){
         Send "{Right down}"
-        Sleep Random(90, 94)
+        Sleep Random(200, 210)
         Send "{Right up}"
         Sleep 50
     }
