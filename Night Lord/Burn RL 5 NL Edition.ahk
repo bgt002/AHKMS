@@ -60,7 +60,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 70
         Send "{f}"
-        Sleep 750
+        Sleep 725
     }
 
     jumpALoop4(){
@@ -169,9 +169,9 @@ SetKeyDelay(192, 255)
         Send "{j down}"
         Sleep 50
         Send "{j up}"
-        Sleep 500
+        Sleep 400
         Send "{j}"
-        Sleep 700
+        Sleep 800
     }
 
 }
