@@ -41,12 +41,13 @@ SetKeyDelay(192, 255)
         lookRight()
         jumpALoop5()
         sleep Random(100, 110)
+        lookLeft()
         jumpAShuriken()
         jumpAloop4()
-        lookLeft()
+        lookRight()
         JumpALoop5()
         Sleep Random(100, 110)
-        lookRight()
+        lookLeft()
         jumpALoop5()
         shadDash()
         lookRight()
@@ -166,7 +167,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 500
         Send "{j}"
-        Sleep 1000
+        Sleep 750
         Send "{j}"
         Sleep 700
     }
