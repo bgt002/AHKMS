@@ -40,13 +40,13 @@ SetKeyDelay(192, 255)
         Sleep Random(100, 110)
         lookRight()
         jumpALoop5()
-        sleep Random(100, 110)
+        sleep Random(110, 120)
         lookLeft()
         jumpAShuriken()
         jumpAloop4()
         lookRight()
         JumpALoop5()
-        Sleep Random(100, 110)
+        Sleep Random(110, 120)
         lookLeft()
         jumpALoop5()
         shadDash()
@@ -60,7 +60,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 70
         Send "{f}"
-        Sleep 700
+        Sleep 750
     }
 
     jumpALoop4(){
@@ -79,7 +79,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 70
         Send "{e}"
-        Sleep 650
+        Sleep 750
     }
 
     jumpALong(){
@@ -166,8 +166,10 @@ SetKeyDelay(192, 255)
         Sleep 90
         Send "{ctrl}"
         Sleep 500
-        Send "{j}"
-        Sleep 750
+        Send "{j down}"
+        Sleep 50
+        Send "{j up}"
+        Sleep 500
         Send "{j}"
         Sleep 700
     }
