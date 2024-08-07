@@ -21,7 +21,7 @@ SetKeyDelay(192, 255)
         lookLeft()
         jumpAShuriken()
         jumpALoop4()
-        Sleep Random (100, 110)
+        Sleep Random(100, 110)
         lookRight()
         loopLock()
 
