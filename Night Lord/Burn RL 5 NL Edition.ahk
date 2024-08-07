@@ -9,7 +9,8 @@ SetKeyDelay(192, 255)
 
 ^j::{
     Loop{
-        Sleep 1000
+        Sleep 500
+        lookLeft()
         shadDash()
         lookRight()
         flashRopeLift()
@@ -51,6 +52,7 @@ SetKeyDelay(192, 255)
         Sleep Random(110, 120)
         lookLeft()
         jumpALoop5()
+        lookRight()
     }
 
     jumpA(){
