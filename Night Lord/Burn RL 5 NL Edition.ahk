@@ -52,6 +52,7 @@ SetKeyDelay(192, 255)
         Sleep Random(110, 120)
         lookLeft()
         jumpALoop5()
+        Sleep Random(110, 120)
         lookRight()
     }
 
