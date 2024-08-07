@@ -10,6 +10,8 @@ SetKeyDelay(192, 255)
 ^j::{
     Loop{
         Sleep 1000
+        shadDash()
+        lookRight()
         flashRopeLift()
         erdaShower()
         doubleJumpAtt()
@@ -49,9 +51,6 @@ SetKeyDelay(192, 255)
         Sleep Random(110, 120)
         lookLeft()
         jumpALoop5()
-        shadDash()
-        lookRight()
-        Sleep 500
     }
 
     jumpA(){
