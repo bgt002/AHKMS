@@ -169,9 +169,9 @@ SetKeyDelay(192, 255)
         Send "{j down}"
         Sleep 50
         Send "{j up}"
-        Sleep 400
+        Sleep 600
         Send "{j}"
-        Sleep 800
+        Sleep 900
     }
 
 }
