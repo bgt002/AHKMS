@@ -31,7 +31,7 @@ SetKeyDelay(192, 255)
     }
 
     loopLock(){
-        Loop 3
+        Loop 2
         fruitLoops()
     }
 
@@ -62,7 +62,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 70
         Send "{f}"
-        Sleep 725
+        Sleep 675
     }
 
     jumpALoop4(){
@@ -81,7 +81,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 70
         Send "{e}"
-        Sleep 750
+        Sleep 775
     }
 
     jumpALong(){
