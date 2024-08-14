@@ -137,10 +137,8 @@ SetKeyDelay(192, 255)
     }
 
     erdaShower(){
-        Send "{down down}" "{7}"
-        Sleep 700
-        send "{down up}"
-        Sleep 150
+        Send "{7}"
+        Sleep 1000
     }
 
 
