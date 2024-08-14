@@ -1,3 +1,6 @@
+; Below is a compilation of base code that can be used for every class. Default FJ, Up Jump, Down Jump, etc. Only thing
+; That needs to change would just be timings.
+
 SetKeyDelay(192, 255)
 
 ^q::reload 
@@ -8,13 +11,18 @@ SetKeyDelay(192, 255)
     Loop{
         shadDodge()
         upJumpFJAtt()
+        jumpA()
+        shadDodge()
         erdaShower()
         badOmens()
         doubleJumpAtt()
-        jumpA()
-        jumpA()
+        Sleep 100
+        summonAnus()
+        jumpALoop2()
+        Sleep 200
         summonSlave()
-        jumpALong()
+        jumpATall()
+        Sleep 675
         lookRight()
         jumpABite()
         JumpAOmen()
@@ -31,22 +39,21 @@ SetKeyDelay(192, 255)
 
     fruitLoops(){
         jumpAOmen()
-        jumpALoop5()
-        Sleep Random(110, 120)
+        jumpAloop4()
+        Sleep Random(100, 110)
         lookRight()
+        jumpALoop3()
+        jumpAOmen()
         jumpA()
-        jumpAOmen()
-        jumpALoop5()
-        Sleep Random(110, 120)
+        Sleep Random(100, 110)
         lookLeft()
-        jumpAOmen()
         jumpALoop5()
-        Sleep Random(110, 120)
+        Sleep Random(100, 110)
         lookRight()
         jumpABite()
         jumpAOmen()
-        jumpALoop4()
-        Sleep Random(110, 120)
+        jumpALoop3()
+        Sleep Random(100, 110)
         lookLeft()
     }
 
@@ -65,7 +72,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 70
         Send "{e}"
-        Sleep 700
+        Sleep 650
     }
 
     jumpAOmen(){
@@ -74,7 +81,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 70
         Send "{del}"
-        Sleep 700
+        Sleep 650
     }  
 
     jumpALong(){
@@ -84,6 +91,15 @@ SetKeyDelay(192, 255)
         Sleep 75
         Send "{f}"
         Sleep 1500
+    }
+
+    jumpATall(){
+        Send "{space}"
+        Sleep 200
+        Send "{ctrl}"
+        Sleep 70
+        Send "{f}"
+        Sleep 700
     }
 
     jumpALoop2(){
@@ -110,14 +126,21 @@ SetKeyDelay(192, 255)
         jumpA()
     }
 
+    jumpATallLoop3(){
+        Loop 3
+        jumpATall()
+    }
+
     ropeLift(){
         Send "{j}"
         Sleep 1700
     }
 
     erdaShower(){
-        Send "{7}"
-        Sleep 1000
+        Send "{down down}" "{7}"
+        Sleep 700
+        send "{down up}"
+        Sleep 150
     }
 
 
@@ -125,26 +148,30 @@ SetKeyDelay(192, 255)
         Send "{Left down}"
         Sleep Random(90, 94)
         Send "{Left up}"
-        Sleep 50
-    }
-
-    moveLeft(){
-        Send "{Left down}"
-        Sleep Random(90, 94)
-        Send "{Left up}"
-        Sleep 400
+        Sleep 20
     }
 
     lookRight(){
         Send "{Right down}"
         Sleep Random(90, 94)
         Send "{Right up}"
-        Sleep 50
+        Sleep 20
     }
 
     feedPet(){
         Send "{0}"
         Sleep 20
+    }
+
+    jump(){
+        Send "{space down}"
+        Sleep Random(50, 85)
+        Send "{space up}"
+        Sleep Random(50, 85)
+        Send "{space down}"
+        Sleep Random(50, 85)
+        Send "{space up}"
+        Sleep Random(90, 95)
     }
 
     upJumpFJAtt(){
@@ -157,7 +184,7 @@ SetKeyDelay(192, 255)
         Send "{space}"
         Sleep 150
         Send "{up up}"
-        Sleep 401
+        Sleep 400
         Send "{space}"
         Sleep 50
         Send "{f}"
@@ -196,4 +223,5 @@ SetKeyDelay(192, 255)
         Send "{8}"
         Sleep 750
     }
+
 }
