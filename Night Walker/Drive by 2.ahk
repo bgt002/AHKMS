@@ -13,6 +13,7 @@ SetKeyDelay(192, 255)
         upJumpFJAtt()
         jumpA()
         shadDodge()
+        Sleep 1
         erdaShower()
         badOmens()
         doubleJumpAtt()
