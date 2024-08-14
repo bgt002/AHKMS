@@ -162,7 +162,7 @@ SetKeyDelay(192, 255)
         Send "{space}"
         Sleep 150
         Send "{up up}"
-        Sleep 350
+        Sleep 600
         Send "{space}"
         Sleep 50
         Send "{f}"
