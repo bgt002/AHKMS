@@ -13,9 +13,7 @@ SetKeyDelay(192, 255)
         upJumpFJAtt()
         jumpA()
         shadDodge()
-        Sleep 1
         erdaShowerCLICK()
-        badOmens()
         doubleJumpAtt()
         Sleep 100
         summonAnus()

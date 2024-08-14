@@ -13,7 +13,7 @@ SetKeyDelay(192, 255)
         doubleJumpAtt()
         moveLeft()
         erdaShower()
-        upJumpFJAtt()
+        upJumpFJAttDELAY()
         lookRight()
         shadDodge()
         summonSlave()
@@ -162,7 +162,24 @@ SetKeyDelay(192, 255)
         Send "{space}"
         Sleep 150
         Send "{up up}"
-        Sleep 900
+        Sleep 600
+        Send "{space}"
+        Sleep 50
+        Send "{f}"
+        Sleep 600
+    }
+
+    upJumpFJAttDELAY(){
+        Send "{space down}"
+        Sleep 50
+        Send "{space up}"
+        Sleep 50
+        Send "{Up down}" 
+        Sleep 150
+        Send "{space}"
+        Sleep 150
+        Send "{up up}"
+        Sleep 800
         Send "{space}"
         Sleep 50
         Send "{f}"
