@@ -38,18 +38,17 @@ SetKeyDelay(192, 255)
 
     fruitLoops(){
         jumpAOmen()
-        jumpAloop4()
+        jumpALoop5()
         Sleep Random(100, 110)
         lookRight()
-        jumpALoop2()
-        jumpABite()
-        jumpALoop3()
+        jumpAloop6()
         Sleep Random(100, 110)
         lookLeft()
         jumpALoop6()
         Sleep Random(100, 110)
         lookRight()
-        jumpALoop6()
+        jumpABite()
+        jumpALoop5()
         Sleep Random(100, 110)
         lookLeft()
     }
@@ -118,6 +117,7 @@ SetKeyDelay(192, 255)
         Loop 5
         jumpA()
     }
+
     jumpALoop6(){
         Loop 6
         jumpA()
