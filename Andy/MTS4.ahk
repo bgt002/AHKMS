@@ -22,8 +22,9 @@ SetKeyDelay(192, 255)
         lookRight()
         shadDodge()
         goingThruFloors()
-        sleep 100
+        Sleep 100
         erdashowerCLICK()
+        Sleep 150
         lookLeft()
         jumpATall()
         Sleep 250
