@@ -17,8 +17,12 @@ SetKeyDelay(192, 255)
         Sleep 100
         jumpA()
         Sleep 100
+        jumpALoop2()
+        Sleep 100
         lookRight()
         shadDodge()
+        goingThruFloors()
+        sleep 100
         erdashowerCLICK()
         lookRight()
         jumpATall()
@@ -214,6 +218,13 @@ SetKeyDelay(192, 255)
     erdaShowerCLICK(){
         Send "{7}"
         Sleep 1000
+    }
+
+    goingThruFloors(){
+        Send "{Down down}" "{space}"
+        Sleep Random(50, 55)
+        Send "{Down up}"
+        Sleep Random(750, 760)
     }
 
 }
