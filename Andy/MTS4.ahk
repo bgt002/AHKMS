@@ -27,7 +27,7 @@ SetKeyDelay(192, 255)
         Sleep 250
         lookLeft()
         jumpATall()
-        Sleep 250
+        Sleep 400
         lookRight()
         jumpAloop5()
         lookLeft()
@@ -41,7 +41,7 @@ SetKeyDelay(192, 255)
 
     fruitLoops(){
         jumpAOmen()
-        jumpALoop5()
+        jumpALoop4()
         Sleep Random(100, 110)
         lookRight()
         jumpAloop5()
