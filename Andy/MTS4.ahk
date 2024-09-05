@@ -16,8 +16,8 @@ SetKeyDelay(192, 255)
         summonSlave()
         Sleep 100
         jumpA()
-        Sleep 100
-        jumpALoop2()
+        Sleep 200
+        doubleJumpAtt()
         Sleep 100
         lookRight()
         shadDodge()
