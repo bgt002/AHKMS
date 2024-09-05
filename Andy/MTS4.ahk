@@ -27,7 +27,7 @@ SetKeyDelay(192, 255)
         Sleep 250
         lookLeft()
         jumpATall()
-        Sleep 400
+        Sleep 550
         lookRight()
         jumpAloop5()
         lookLeft()
