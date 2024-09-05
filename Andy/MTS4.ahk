@@ -98,7 +98,7 @@ SetKeyDelay(192, 255)
         Send "{ctrl}"
         Sleep 70
         Send "{f}"
-        Sleep 850
+        Sleep 1000
     }
 
     jumpALoop2(){
