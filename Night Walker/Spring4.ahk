@@ -52,7 +52,7 @@ SetKeyDelay(-1, 255)
 
     shadowDodge()
     {
-        Send "{Shift}"
+        Send "{a}"
         Sleep Random(400,405)
     }
 
