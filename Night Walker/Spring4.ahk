@@ -8,11 +8,6 @@ SetKeyDelay(-1, 255)
 
     Loop
     {
-        sleep Random(400,500)
-        Send "{F8}"
-        sleep Random(100,200)
-        Send "{F8}"
-        sleep Random(100,200)
 
         Loop 6
         {
