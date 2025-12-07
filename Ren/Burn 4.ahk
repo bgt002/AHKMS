@@ -13,33 +13,14 @@ SetKeyDelay(192, 255)
         ;;Loop section goes in here
     }
 
-    loopLock(){
-        Loop 10
-        fruitLoops()
-    }
-
-    fruitLoops(){
-        ;;Insert Attack Sequence that needs to be looped to be inserted into loopLock
-    }
-
-    jumpA(){
-        Send "{ctrl}"
-        Sleep 90
-        Send "{space}"
-        Sleep 70
-        Send "{f}"
-        Sleep 700
-    }
-
     ropeLift(){
         Send "{j}"
         Sleep 1700
     }
 
     erdaShower(){
-        Send "{down down}" "{e}"
+        Send "{e}"
         Sleep 700
-        send "{down up}"
     }
 
 
@@ -47,19 +28,21 @@ SetKeyDelay(192, 255)
         Send "{Left down}"
         Sleep Random(60, 65)
         Send "{Left up}"
-        Sleep 15
+        Sleep Random(50, 70)
     }
 
     lookRight(){
         Send "{Right down}"
         Sleep Random(50, 52)
         Send "{Right up}"
-        Sleep 15
+        Sleep Random(50, 70)
     }
 
     feedPet(){
         Send "{0}"
-        Sleep 20
+        Sleep Random(100,200)
+        Send "{0}"
+        Sleep Random(100,200)
     }
 
     goingThruFloors(){
@@ -76,24 +59,27 @@ SetKeyDelay(192, 255)
         Sleep Random(825, 830)
     }
 
-    xBuff(){
-        send "{x}"
-        Sleep 650
-    }
-
-    zBuff(){
-        send "{z}"
-        Sleep 650
-    }
-
     jump(){
         Send "{Space down}"
-        Sleep Random(50, 85)
+        Sleep Random(40, 45)
         Send "{Space up}"
-        Sleep Random(50, 85)
+        Sleep Random(120, 125)
         Send "{Space down}"
-        Sleep Random(50, 85)
+        Sleep Random(40, 45)
         Send "{Space up}"
-        Sleep Random(90, 95)
+        Sleep Random(640,650)
     }
+
+    StormStart()
+    {
+        Send "{d down}"
+        Sleep Random(60,70)
+    }
+
+    StormStop()
+    {
+        Send "{d up}"
+        Sleep Random(60,70)
+    }
+    
 }
