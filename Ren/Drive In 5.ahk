@@ -19,24 +19,24 @@ SetKeyDelay(192, 255)
         liftPetal()
         erdaShower()
         solAnus()
-        StormStart()
-        flashJump(2)
-        StormStop()
+        fjAttack(2)
         riotousHeart()
-        StormStart()
-        flashJump(2)
-        stormStop()
+        fjAttack(2)
         lookRight()
         fjAttack(6)
         lookLeft()
         StormStart()
-        Loop 5
+        Loop 3
         {
-            flashJump(6)
+            flashJump(5)
             lookRight()
-            flashJump(6)
+            flashJump(5)
             lookLeft()
         }
+        flashJump(5)
+        lookRight()
+        flashJump(6)
+        lookLeft()
         StormStop()
     }
 
@@ -88,7 +88,7 @@ SetKeyDelay(192, 255)
     liftPetal()
     {
         Send "{alt}"
-        Sleep Random(750,760)
+        Sleep Random(850,860)
     }
 
     ropeLift(){
@@ -162,7 +162,7 @@ SetKeyDelay(192, 255)
             flashJump(1)
         }
         Send "{d up}"
-        Sleep Random(750,760)
+        Sleep Random(700,710)
     }
 
     jumpRiotousHeart()
@@ -180,7 +180,7 @@ SetKeyDelay(192, 255)
     riotousHeart()
     {
         Send "{e}"
-        Sleep Random(500,520)
+        Sleep Random(600,610)
     }
 
     StormStart()
