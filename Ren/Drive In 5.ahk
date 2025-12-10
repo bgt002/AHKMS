@@ -20,7 +20,7 @@ SetKeyDelay(192, 255)
         erdaShower()
         solAnus()
         fjAttack(2)
-        riottousHeart()
+        riotousHeart()
         fjAttack(2)
         lookRight()
         fjAttack(6)
@@ -78,13 +78,13 @@ SetKeyDelay(192, 255)
         Send "{Up Down}" "{Space down}"
         Sleep Random(35,45)
         Send "{Up Up}" "{Space up}"
-        Sleep Random(250,270)
+        Sleep Random(200,210)
     }
 
     liftPetal()
     {
         Send "{alt}"
-        Sleep Random(500,520)
+        Sleep Random(600,610)
     }
 
     ropeLift(){
@@ -173,7 +173,7 @@ SetKeyDelay(192, 255)
         Sleep Random(500,520)
     }
 
-    riottousHeart()
+    riotousHeart()
     {
         Send "{e}"
         Sleep Random(500,520)
