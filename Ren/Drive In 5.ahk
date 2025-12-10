@@ -19,9 +19,13 @@ SetKeyDelay(192, 255)
         liftPetal()
         erdaShower()
         solAnus()
-        fjAttack(2)
+        StormStart()
+        flashJump(2)
+        StormStop()
         riotousHeart()
-        fjAttack(2)
+        StormStart()
+        flashJump(2)
+        stormStop()
         lookRight()
         fjAttack(6)
         lookLeft()
@@ -84,7 +88,7 @@ SetKeyDelay(192, 255)
     liftPetal()
     {
         Send "{alt}"
-        Sleep Random(650,660)
+        Sleep Random(750,760)
     }
 
     ropeLift(){
