@@ -28,9 +28,9 @@ SetKeyDelay(192, 255)
         StormStart()
         Loop 5
         {
-            flashJump(6)
+            flashJump(5)
             lookRight()
-            flashJump(6)
+            flashJump(5)
             lookLeft()
         }
         StormStop()
@@ -78,13 +78,13 @@ SetKeyDelay(192, 255)
         Send "{Up Down}" "{Space down}"
         Sleep Random(35,45)
         Send "{Up Up}" "{Space up}"
-        Sleep Random(200,210)
+        Sleep Random(175,185)
     }
 
     liftPetal()
     {
         Send "{alt}"
-        Sleep Random(600,610)
+        Sleep Random(650,660)
     }
 
     ropeLift(){
@@ -145,7 +145,7 @@ SetKeyDelay(192, 255)
             Send "{Space down}"
             Sleep Random(40, 45)
             Send "{Space up}"
-            Sleep Random(700,730)
+            Sleep Random(750,760)
         }
     }
 
