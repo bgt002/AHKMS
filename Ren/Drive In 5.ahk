@@ -28,9 +28,9 @@ SetKeyDelay(192, 255)
         StormStart()
         Loop 5
         {
-            flashJump(5)
+            flashJump(6)
             lookRight()
-            flashJump(5)
+            flashJump(6)
             lookLeft()
         }
         StormStop()
@@ -70,7 +70,7 @@ SetKeyDelay(192, 255)
         Send "{Space down}"
         Sleep Random(60,65)
         Send "{Space up}"
-        Sleep Random(255,270)
+        Sleep Random(350,375)
         Send "{Up Down}" "{Space down}"
         Sleep Random(35,45)
         Send "{Up Up}" "{Space up}"
@@ -158,7 +158,7 @@ SetKeyDelay(192, 255)
             flashJump(1)
         }
         Send "{d up}"
-        Sleep Random(60,70)
+        Sleep Random(750,760)
     }
 
     jumpRiotousHeart()
