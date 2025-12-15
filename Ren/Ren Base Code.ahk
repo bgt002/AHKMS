@@ -9,8 +9,70 @@ SetKeyDelay(192, 255)
 
 ^j::{
 
-    Loop{
-        ;;Loop section goes in here
+    Loop
+    {
+        ;;loop code goes here
+    }
+
+    toggleRandomKey()
+    {
+        Switch Random(1,9)
+        {
+            case 1:
+                Send "i"
+                Sleep 255
+                Send "i"
+                Sleep 50
+            case 2:
+                Send "k"
+                Sleep 255
+                Send "k"
+                Sleep 50
+            case 3:
+                Send "l"
+                Sleep 255
+                Send "l"
+                Sleep 50
+            case 4:
+                Send "p"
+                Sleep 255
+                Send "p"
+                Sleep 50
+            case 5, 6, 7, 8, 9:
+                Sleep 50
+        }
+    }
+
+    upJumpShort()
+    {
+        Send "{Space down}"
+        Sleep Random(60,65)
+        Send "{Space up}"
+        Sleep Random(350,375)
+        Send "{Up Down}" "{Space down}"
+        Sleep Random(35,45)
+        Send "{Up Up}" "{Space up}"
+        Sleep Random(35,45)
+        Send "{Up Down}" "{Space down}"
+        Sleep Random(35,45)
+        Send "{Up Up}" "{Space up}"
+        Sleep Random(175,185)
+    }
+
+    liftPetal()
+    {
+        Send "{alt}"
+        Sleep Random(850,860)
+    }
+
+    jumpLiftPetal()
+    {
+        Send "{Space down}"
+        Sleep Random(40, 45)
+        Send "{Space up}"
+        Sleep Random(120, 125)
+        Send "{alt}"
+        Sleep Random(850, 860)
     }
 
     ropeLift(){
@@ -19,10 +81,14 @@ SetKeyDelay(192, 255)
     }
 
     erdaShower(){
-        Send "{e}"
+        Send "{7}"
         Sleep 700
     }
 
+    solAnus(){
+        Send "{8}"
+        Sleep 500
+    }
 
     lookLeft(){
         Send "{Left down}"
@@ -41,8 +107,6 @@ SetKeyDelay(192, 255)
     feedPet(){
         Send "{0}"
         Sleep Random(100,200)
-        Send "{0}"
-        Sleep Random(100,200)
     }
 
     goingThruFloors(){
@@ -59,7 +123,34 @@ SetKeyDelay(192, 255)
         Sleep Random(825, 830)
     }
 
-    jump(){
+    flashJump(timesToJump){
+        Loop timesToJump
+        {
+            Send "{Space down}"
+            Sleep Random(40, 45)
+            Send "{Space up}"
+            Sleep Random(120, 125)
+            Send "{Space down}"
+            Sleep Random(40, 45)
+            Send "{Space up}"
+            Sleep Random(750,760)
+        }
+    }
+
+    fjAttack(timesToFj)
+    {
+        Send "{d down}"
+        Sleep Random(60,70)
+        Loop timesToFj
+        {
+            flashJump(1)
+        }
+        Send "{d up}"
+        Sleep Random(700,710)
+    }
+
+    fjLiftPetal()
+    {
         Send "{Space down}"
         Sleep Random(40, 45)
         Send "{Space up}"
@@ -67,7 +158,27 @@ SetKeyDelay(192, 255)
         Send "{Space down}"
         Sleep Random(40, 45)
         Send "{Space up}"
-        Sleep Random(640,650)
+        Sleep Random(400,410)
+        Send "{alt}"
+        Sleep Random(700,710)
+    }
+
+    jumpRiotousHeart()
+    {
+        Send "{Space}"
+        Sleep Random(300,350)
+        Loop Random(3,5)
+        {
+            Send "q"
+            Sleep Random(20,30)
+        }
+        Sleep Random(500,520)
+    }
+
+    riotousHeart()
+    {
+        Send "{e}"
+        Sleep Random(600,610)
     }
 
     StormStart()
@@ -81,5 +192,5 @@ SetKeyDelay(192, 255)
         Send "{d up}"
         Sleep Random(60,70)
     }
-    
+
 }

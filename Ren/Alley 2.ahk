@@ -9,31 +9,32 @@ SetKeyDelay(192, 255)
     Loop
     {
         sleep Random(800,805)
-        toggleRandomKey() 
+        toggleRandomKey()
         feedPet()
-        lookLeft()
-        upJumpShort()
-        liftPetal()
-        erdaShower()
-        solAnus()
-        fjAttack(2)
-        riotousHeart()
-        fjAttack(2)
         lookRight()
-        fjAttack(6)
+        jumpLiftPetal()
+        riotousHeart()
+        fjLiftPetal()
+        fjAttack(1)
+        erdaShower()
+        fjAttack(1)
+        solAnus()
+        fjAttack(1)
         lookLeft()
+        fjAttack(6)
+        lookRight()
         StormStart()
         Loop 3
         {
             flashJump(5)
-            lookRight()
-            flashJump(5)
             lookLeft()
+            flashJump(5)
+            lookRight()
         }
         flashJump(5)
-        lookRight()
-        flashJump(6)
         lookLeft()
+        flashJump(6)
+        lookRight()
         StormStop()
     }
 
@@ -86,6 +87,16 @@ SetKeyDelay(192, 255)
     {
         Send "{alt}"
         Sleep Random(850,860)
+    }
+
+    jumpLiftPetal()
+    {
+        Send "{Space down}"
+        Sleep Random(40, 45)
+        Send "{Space up}"
+        Sleep Random(120, 125)
+        Send "{alt}"
+        Sleep Random(850, 860)
     }
 
     ropeLift(){
@@ -162,6 +173,20 @@ SetKeyDelay(192, 255)
         Sleep Random(700,710)
     }
 
+    fjLiftPetal()
+    {
+        Send "{Space down}"
+        Sleep Random(40, 45)
+        Send "{Space up}"
+        Sleep Random(120, 125)
+        Send "{Space down}"
+        Sleep Random(40, 45)
+        Send "{Space up}"
+        Sleep Random(400,410)
+        Send "{alt}"
+        Sleep Random(700,710)
+    }
+
     jumpRiotousHeart()
     {
         Send "{Space}"
@@ -191,6 +216,5 @@ SetKeyDelay(192, 255)
         Send "{d up}"
         Sleep Random(60,70)
     }
-    
-    
+
 }
