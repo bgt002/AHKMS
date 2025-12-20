@@ -24,7 +24,7 @@ SetKeyDelay(192, 255)
         fjAttack(6)
         lookRight()
         StormStart()
-        Loop 3
+        Loop Random(4,6)
         {
             flashJump(5)
             lookLeft()
@@ -129,8 +129,11 @@ SetKeyDelay(192, 255)
     }
 
     feedPet(){
-        Send "{0}"
-        Sleep Random(100,200)
+        Loop Random(1,3)
+        {
+            Send "{0}"
+            Sleep Random(200,300)
+        }
     }
 
     goingThruFloors(){
@@ -157,7 +160,7 @@ SetKeyDelay(192, 255)
             Send "{Space down}"
             Sleep Random(40, 45)
             Send "{Space up}"
-            Sleep Random(750,760)
+            Sleep Random(700,710)
         }
     }
 
@@ -208,7 +211,7 @@ SetKeyDelay(192, 255)
     StormStart()
     {
         Send "{d down}"
-        Sleep Random(60,70)
+        Sleep(Random(60,70))
     }
 
     StormStop()
